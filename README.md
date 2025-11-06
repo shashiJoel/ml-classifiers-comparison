@@ -2,7 +2,7 @@
 
 A comprehensive machine learning analysis comparing the performance of K-Nearest Neighbors, Logistic Regression, Decision Trees, and Support Vector Machines for predicting bank term deposit subscriptions.
 
-## 📊 Project Overview
+## Project Overview
 
 This project analyzes data from a Portuguese banking institution's direct marketing campaigns (phone calls) to predict whether clients will subscribe to a term deposit. The goal is to identify the best performing classifier to optimize future marketing campaigns.
 
@@ -31,7 +31,7 @@ Notebook: [prompt_III.ipynb](prompt_III.ipynb)
 
 ### Target Variable
 - **isSubscribed** (y): Has the client subscribed to a term deposit? (yes/no)
-  - **Class Distribution**: 88.73% No, 11.27% Yes (⚠️ **Highly Imbalanced**)
+  - **Class Distribution**: 88.73% No, 11.27% Yes ( **Highly Imbalanced**)
 
 ### Features Used (Bank Client Information)
 1. **age** (numeric): Client's age
@@ -50,7 +50,7 @@ Notebook: [prompt_III.ipynb](prompt_III.ipynb)
 
 ---
 
-## 🔧 Data Preprocessing
+##  Data Preprocessing
 
 ### Encoding Strategy
 1. **Numeric Features (age)**: 
@@ -132,7 +132,7 @@ To address the imbalance, we implemented:
 
 ---
 
-## 🏆 Model Performance Comparison
+##  Model Performance Comparison
 
 ### Baseline Models (Before Tuning)
 
@@ -158,17 +158,17 @@ With class weight balancing and ROC-AUC optimization:
 
 ### 1. **Model Selection**
 Based on the analysis, the recommended model should have:
-- ✅ **Highest ROC-AUC score** (best discrimination ability)
-- ✅ **Balanced precision and recall** (F1-score)
-- ✅ **Good recall for "yes" class** (identify subscribers)
-- ✅ **Reasonable training time** (practical deployment)
+-  **Highest ROC-AUC score** (best discrimination ability)
+-  **Balanced precision and recall** (F1-score)
+- **Good recall for "yes" class** (identify subscribers)
+-  **Reasonable training time** (practical deployment)
 
 **Expected Best Performer**: Decision Tree or Logistic Regression (tuned with class weights)
 
 **Immediate Actions:**
-1. ✅ Deploy the best performing model in a pilot campaign
-2. ✅ Set up monitoring for model performance metrics
-3. ✅ Create a feedback loop to retrain model with new data
+1.  Deploy the best performing model in a pilot campaign
+2.  Set up monitoring for model performance metrics
+3.  Create a feedback loop to retrain model with new data
 
 **Future Enhancements:**
 1. **Include additional features**:
